@@ -30,16 +30,34 @@ using namespace std;
 int main()
 {
     //EX05_01 – Liang Programming Exercise 12.2: Linear Search
+    cout << "//12.2: Linear Search" <<endl;
     testSearch();
     
     cout << " " <<endl;
     
     //EX05_02 – Liang Programming Exercise 12.4: Is sorted?
+    cout << "//12.4: Is sorted?" <<endl;
     sortComplete();
     
     cout << " " <<endl;
     
+    //EX05_03 – Liang Programming Exercise 12.8: Implement vector class
+     cout << "//12.8: Implement vector class" <<endl;
+    
+    
+    
+    
+    cout << " " <<endl;
+    
+    //EX05_04 – Liang Programming Exercise 12.20: Shuffle vector
+    cout << "//12.20: Shuffle vector" <<endl;
+    
+    
+    
+    cout << " " <<endl;
+    
     //EX05_05 – Liang Programming Exercise 12.25: new Account class
+    cout << "//12.25: new Account class" <<endl;
     
     Account A1;
     A1.setName("Joe");
@@ -59,6 +77,7 @@ int main()
     cout <<"Monthly Interest: $"<< A1.getMonthlyInterestRate()<<endl;
     cout <<"Total Balance a month: $"<< A1.getbalance()+ A1.getMonthlyInterestRate()<<endl;
     
+    cout << " " <<endl;
     return 0;
     
 }
