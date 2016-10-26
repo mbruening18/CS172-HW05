@@ -8,6 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		C1F7390C1DC13C05007D5FE9 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C1F7390B1DC13C05007D5FE9 /* main.cpp */; };
+		C1F739141DC13D73007D5FE9 /* LinearSearch.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C1F739121DC13D73007D5FE9 /* LinearSearch.cpp */; };
+		C1F739171DC13F8F007D5FE9 /* IsSorted.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C1F739151DC13F8F007D5FE9 /* IsSorted.cpp */; };
+		C1F7391A1DC1403F007D5FE9 /* Vector.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C1F739181DC1403F007D5FE9 /* Vector.cpp */; };
+		C1F7391D1DC14171007D5FE9 /* ShuffleVector.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C1F7391B1DC14171007D5FE9 /* ShuffleVector.cpp */; };
+		C1F739201DC141D1007D5FE9 /* Account.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C1F7391E1DC141D1007D5FE9 /* Account.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,6 +30,16 @@
 /* Begin PBXFileReference section */
 		C1F739081DC13C05007D5FE9 /* CS172-HW05 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "CS172-HW05"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C1F7390B1DC13C05007D5FE9 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		C1F739121DC13D73007D5FE9 /* LinearSearch.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = LinearSearch.cpp; sourceTree = "<group>"; };
+		C1F739131DC13D73007D5FE9 /* LinearSearch.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = LinearSearch.hpp; sourceTree = "<group>"; };
+		C1F739151DC13F8F007D5FE9 /* IsSorted.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = IsSorted.cpp; sourceTree = "<group>"; };
+		C1F739161DC13F8F007D5FE9 /* IsSorted.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = IsSorted.hpp; sourceTree = "<group>"; };
+		C1F739181DC1403F007D5FE9 /* Vector.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Vector.cpp; sourceTree = "<group>"; };
+		C1F739191DC1403F007D5FE9 /* Vector.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Vector.hpp; sourceTree = "<group>"; };
+		C1F7391B1DC14171007D5FE9 /* ShuffleVector.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ShuffleVector.cpp; sourceTree = "<group>"; };
+		C1F7391C1DC14171007D5FE9 /* ShuffleVector.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = ShuffleVector.hpp; sourceTree = "<group>"; };
+		C1F7391E1DC141D1007D5FE9 /* Account.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Account.cpp; sourceTree = "<group>"; };
+		C1F7391F1DC141D1007D5FE9 /* Account.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Account.hpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +73,16 @@
 			isa = PBXGroup;
 			children = (
 				C1F7390B1DC13C05007D5FE9 /* main.cpp */,
+				C1F739121DC13D73007D5FE9 /* LinearSearch.cpp */,
+				C1F739131DC13D73007D5FE9 /* LinearSearch.hpp */,
+				C1F739151DC13F8F007D5FE9 /* IsSorted.cpp */,
+				C1F739161DC13F8F007D5FE9 /* IsSorted.hpp */,
+				C1F739181DC1403F007D5FE9 /* Vector.cpp */,
+				C1F739191DC1403F007D5FE9 /* Vector.hpp */,
+				C1F7391B1DC14171007D5FE9 /* ShuffleVector.cpp */,
+				C1F7391C1DC14171007D5FE9 /* ShuffleVector.hpp */,
+				C1F7391E1DC141D1007D5FE9 /* Account.cpp */,
+				C1F7391F1DC141D1007D5FE9 /* Account.hpp */,
 			);
 			path = "CS172-HW05";
 			sourceTree = "<group>";
@@ -119,6 +144,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C1F739141DC13D73007D5FE9 /* LinearSearch.cpp in Sources */,
+				C1F739201DC141D1007D5FE9 /* Account.cpp in Sources */,
+				C1F7391D1DC14171007D5FE9 /* ShuffleVector.cpp in Sources */,
+				C1F739171DC13F8F007D5FE9 /* IsSorted.cpp in Sources */,
+				C1F7391A1DC1403F007D5FE9 /* Vector.cpp in Sources */,
 				C1F7390C1DC13C05007D5FE9 /* main.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
