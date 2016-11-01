@@ -16,13 +16,13 @@
 #include <cmath>
 #include <string>
 #include <ctime>
-
-using namespace std;
+#include <cctype>
+#include <vector>
 
 #include "LinearSearch.hpp"
 #include "IsSorted.hpp"
-//#include "Vector.hpp"
-//#include "ShuffleVector.hpp"
+#include "Vector.hpp"
+#include "ShuffleVector.hpp"
 #include "Account.hpp"
 
 
@@ -44,18 +44,68 @@ int main()
     //EX05_03 – Liang Programming Exercise 12.8: Implement vector class
      cout << "//12.8: Implement vector class" <<endl;
     
+    Vector<int> vInt;
     
+    for(int i=0; i<10; i++)
+    {
+        vInt.pushBack(i+1);
+    }
     
+    cout<<"Numbers in the vector: ";
+    for(int i=0; i<vInt.size(); i++)
+    {
+        cout<<vInt.at(i)<<" ";
+    }
     
+    Vector<string> vString;
+    
+    vString.pushBack("Dallas");
+    vString.pushBack("Houston");
+    vString.pushBack("Austin");
+    vString.pushBack("Norman");
+    
+    cout<<"Strings in the string vector: ";
+    for(int i=0; i< vString.size(); i++)
+        cout<<vString.at(i)<< " ";
+    
+    vString.popBack();
+    
+    Vector<string> v2;
+    
+    v2.swap(vString);
+    v2.pushBack("Atlanta");
+    
+    cout<<"Strings in the vector v2: ";
+    for(int i=0; i< v2.size(); i++)
+    {
+        cout<< v2.at(i)<< " ";
+    }
+}
+
     cout << " " <<endl;
     
     //EX05_04 – Liang Programming Exercise 12.20: Shuffle vector
     cout << "//12.20: Shuffle vector" <<endl;
-    
-    
-    
+
+    vector<int> nums(10);
+    //cout << "Enter 10 integers: ";
+    for(int i=0; i < nums.size(); i++)
+    {
+        nums[i] = i;
+    }
+    for(int i=0; i < nums.size(); i++)
+    cout << nums[i] << " ";
+    cout << endl;
+    shuffle(nums);
+    for(int i=0; i < nums.size(); i++)
+    cout<< nums[i] << " ";
+    cout << endl;
+
+
+
+
     cout << " " <<endl;
-    
+
     //EX05_05 – Liang Programming Exercise 12.25: new Account class
     cout << "//12.25: new Account class" <<endl;
     

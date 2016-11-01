@@ -13,12 +13,11 @@
 
 //EX05_04 – Liang Programming Exercise 12.20: Shuffle vector
 
-/*
 template<typename D>
 void shuffle(vector<D>& v);
 
 void testShuffle();
 
  
- */
+
 #endif /* ShuffleVector_hpp */

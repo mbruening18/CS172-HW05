@@ -9,10 +9,13 @@
 #include "Vector.hpp"
 
 #include <iostream>
-#include <iomanip>
-#include <cmath>
-#include <string>
+#include <cstdlib>
 #include <ctime>
+#include <cctype>
+#include <iomanip>
+#include <string>
+#include <fstream>
+#include <vector>
 
 using namespace std;
 

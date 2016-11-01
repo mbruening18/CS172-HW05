@@ -9,17 +9,20 @@
 #include "ShuffleVector.hpp"
 
 #include <iostream>
-#include <iomanip>
-#include <cmath>
-#include <string>
+#include <cstdlib>
 #include <ctime>
+#include <cctype>
+#include <iomanip>
+#include <string>
+#include <fstream>
+#include <vector>
 
 using namespace std;
 
 //EX05_04 – Liang Programming Exercise 12.20: Shuffle vector
 
 
-/*
+
 template<typename D>
 void shuffle(vector<D>& v)
 {
@@ -73,4 +76,3 @@ void testShuffle()
         cout << "myvector[" << i << "]=" << myvector[i] << endl;
     }
 }
-*/

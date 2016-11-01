@@ -12,40 +12,99 @@
 #include <stdio.h>
 
 //EX05_03 – Liang Programming Exercise 12.8: Implement vector class
-/*
-class vector
+
+template <typename T>
+class Vector
 {
+private:
+    T* mElements;
+    int mSize;
+    int mCapacity;
+    void doubleCapacity()
+    {
+        T *old = mElements;
+        mCapacity = 2 * mCapacity;
+        mElements = new T[ mCapacity ];
+        for ( int i=0; i<mSize; i++ )
+        {
+            mElements[i] = old[i];
+        }
+        delete [] old;
+    }
 public:
-    vector <elementType>();
-    vector <elementType>(size:int);
-    vector <elementType>(ize:int, defaultValue:element);
+    Vector()
+    {
+        mCapacity = 8;
+        mSize = 0;
+        mElements = new T[mCapacity];
+    }
     
-    void pushBack ();
-    void popBack();
+    Vector(int size)
+    {
+        mCapacity = size;
+        mSize = size;
+        mElements = new T[mCapacity];
+        
+    }
     
-    unsigned size() const;
-    at(index: int):elementType const;
+    Vector(int size, T defaultValue)
+    {
+        mCapacity = size;
+        mSize = size;
+        mElements = new T[mCapacity];
+        for (int i = 0; i < mSize; i++)
+        {
+            mElements[i] = defaultValue;
+        }
+    }
+
+    void pushBack(T element)
+    {
+        if (mSize >= mCapacity)
+        {
+            doubleCapacity();
+        }
+        mElements[mSize] = element;
+        mSize++;
+    }
     
-    bool empty() const;
-    void clear();
-    void swap(v2: vector);
+    void popBack()
+    {
+        mSize--;
+    }
+    
+    unsigned int size() const
+    {
+        return size;
+    }
+    
+    T at(int index) const
+    {
+        return mElements[index];
+    }
+    
+    bool empty() const
+    {
+        return mSize == 0;
+    }
+    
+    void clear()
+    {
+        return mSize = 0;
+    }
+    
+    void swap(Vector<T> v2)
+    {
+        clear();
+        for (int i = 0; i < v2.size(); i ++)
+        {
+            pushBack(v2.at(i));
+        }
+        
+    }
     
 };
- 
- class My_vector
- {
- public:
- vector<elementType>();
- vector<elementType>(int);
- vector<elementType>(int, elementType defaultValue);
- void push_back(elementType);
- void pop_back();
- unsigned const size();
- elementType const at(int);
- bool const empty();
- void clear();
- void swap(vector);
- };
 
-*/
+
+
 #endif /* Vector_hpp */
