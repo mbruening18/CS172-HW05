@@ -23,6 +23,7 @@ using namespace std;
 
 //EX05_01 – Liang Programming Exercise 12.2: Linear Search
 
+//
 template<typename A>
 int linearSearch(const A list[], A key, int arraySize)
 {
@@ -69,8 +70,8 @@ void testSearch()
         cout<<"Match"<<endl;
     }
     
-    
 }
+
 
 //EX05_02 – Liang Programming Exercise 12.4: Is sorted?
 
@@ -242,81 +243,22 @@ public:
 };
 
 
-/*
+
  //EX05_04 – Liang Programming Exercise 12.20: Shuffle vector
  
- void testShuffle()
+ template <typename T>
+ void shuffle(vector<T>& v)
  {
- vector<int> myvector;
- 
- const int maxSize=10;
- int x=0;
- for (int i=0; i<maxSize; ++i)
- {
- cout << "Enter integer element #" << i << ":";
- cin >>x;
+     srand((unsigned int)time(NULL));
+     for(int i=0; i<v.size(); i++)
+     {
+         int index = rand() % v.size();
+         T temp = v[index];
+         v[index]=v[i];
+         v[i]=temp;
+     }
  }
- 
- // using built-in random generator:
- cout << "Original Vector:" << endl;
- for(int i=0; i<maxSize; i++)
- {
- cout << "myvector[" << i << "]=" << myvector[i] << endl;
- }
- 
- shuffle ( myvector );
- cout << "Vector after first shuffle:" << endl;
- for(int i=0; i<maxSize; i++)
- {
- cout << "myvector[" << i << "]=" << myvector[i] << endl;
- }
- 
- // using myrandom:
- shuffle ( myvector );
- cout << "Vector after second shuffle:" << endl;
- for(int i=0; i<maxSize; i++)
- {
- cout << "myvector[" << i << "]=" << myvector[i] << endl;
- }
- }
- 
- 
- void testShuffle()
- {
- Vector<int> myVector;
- 
- const int maxSize=10;
- int x=0;
- for (int i=0; i<maxSize; ++i)
- {
- cout << "Enter integer element #" << i << ":";
- cin >>x;
- }
- 
- // using built-in random generator:
- cout << "Original Vector:" << endl;
- for(int i=0; i<maxSize; i++)
- {
- cout << "myvector[" << i << "]=" << myVector[i] << endl;
- }
- 
- shuffle ( myVector );
- cout << "Vector after first shuffle:" << endl;
- for(int i=0; i<maxSize; i++)
- {
- cout << "myvector[" << i << "]=" << myvector[i] << endl;
- }
- 
- // using myrandom:
- shuffle ( myVector );
- cout << "Vector after second shuffle:" << endl;
- for(int i=0; i<maxSize; i++)
- {
- cout << "myvector[" << i << "]=" << myVector[i] << endl;
- }
- }
- 
- */
+
 //EX05_05 – Liang Programming Exercise 12.25: new Account class
 
 class Account
@@ -445,27 +387,31 @@ int main()
         cout<< v2.at(i)<< " ";
     }
     cout << " " <<endl;
+    cout << " " <<endl;
     
-    /*
+    
+   
      //EX05_04 – Liang Programming Exercise 12.20: Shuffle vector
      cout << "//12.20: Shuffle vector" <<endl;
-     
+    
      vector<int> nums(10);
+    
      //cout << "Enter 10 integers: ";
      for(int i=0; i < nums.size(); i++)
-     {
      nums[i] = i;
-     }
      for(int i=0; i < nums.size(); i++)
      cout << nums[i] << " ";
      cout << endl;
      shuffle(nums);
      for(int i=0; i < nums.size(); i++)
      cout<< nums[i] << " ";
-     cout << endl;
-     */
+    
+    
     
     cout << " " <<endl;
+    cout << " " <<endl;
+    
+    
     
     //EX05_05 – Liang Programming Exercise 12.25: new Account class
     cout << "//12.25: new Account class" <<endl;
